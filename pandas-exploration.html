@@ -14464,7 +14464,7 @@ memory usage: 1.4 MB
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-rw-r--r--  1 rick446  staff   1.8M May  2 11:12 data/california-housing.csv
+<pre>-rw-r--r--  1 rick446  staff   1.8M May  2 08:12 data/california-housing.csv
 </pre>
 </div>
 </div>
@@ -15725,7 +15725,7 @@ Name: AveOccup, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">housing</span><span class="o">.</span><span class="n">AveOccup</span> <span class="o">&gt;</span> <span class="n">outlier_threshold</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;AveOccup&#39;</span><span class="p">)</span>
@@ -15744,7 +15744,7 @@ Name: AveOccup, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -15895,7 +15895,7 @@ Name: AveOccup, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">outliers</span><span class="o">.</span><span class="n">values</span>
@@ -15914,7 +15914,7 @@ Name: AveOccup, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -15932,7 +15932,7 @@ Name: AveOccup, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">other_outliers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">outliers</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">outliers</span><span class="o">.</span><span class="n">index</span> <span class="o">+</span> <span class="mi">20640</span><span class="p">)</span>
@@ -15952,7 +15952,7 @@ Name: AveOccup, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
 
@@ -15987,7 +15987,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">other_outliers</span><span class="p">]</span>
@@ -16013,36 +16013,36 @@ Length: 20640, dtype: bool</pre>
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">IndexingError</span>                             Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-21-a289836e86b9&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-20-a289836e86b9&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>housing<span class="ansi-blue-fg">.</span>loc<span class="ansi-blue-fg">[</span>other_outliers<span class="ansi-blue-fg">]</span>
 
-<span class="ansi-green-fg">~/.virtualenvs/py37/lib/python3.7/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1766</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1767</span>             maybe_callable <span class="ansi-blue-fg">=</span> com<span class="ansi-blue-fg">.</span>apply_if_callable<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>obj<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 1768</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_getitem_axis<span class="ansi-blue-fg">(</span>maybe_callable<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1769</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1770</span>     <span class="ansi-green-fg">def</span> _is_scalar_access<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> key<span class="ansi-blue-fg">:</span> Tuple<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">~/.virtualenvs/py38/lib/python3.8/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">    877</span> 
+<span class="ansi-green-intense-fg ansi-bold">    878</span>             maybe_callable <span class="ansi-blue-fg">=</span> com<span class="ansi-blue-fg">.</span>apply_if_callable<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>obj<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 879</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_getitem_axis<span class="ansi-blue-fg">(</span>maybe_callable<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    880</span> 
+<span class="ansi-green-intense-fg ansi-bold">    881</span>     <span class="ansi-green-fg">def</span> _is_scalar_access<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> key<span class="ansi-blue-fg">:</span> Tuple<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">~/.virtualenvs/py37/lib/python3.7/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">_getitem_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1912</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_get_slice_axis<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1913</span>         <span class="ansi-green-fg">elif</span> com<span class="ansi-blue-fg">.</span>is_bool_indexer<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1914</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_getbool_axis<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1915</span>         <span class="ansi-green-fg">elif</span> is_list_like_indexer<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1916</span> 
+<span class="ansi-green-fg">~/.virtualenvs/py38/lib/python3.8/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">_getitem_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1088</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_get_slice_axis<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1089</span>         <span class="ansi-green-fg">elif</span> com<span class="ansi-blue-fg">.</span>is_bool_indexer<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 1090</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_getbool_axis<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1091</span>         <span class="ansi-green-fg">elif</span> is_list_like_indexer<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1092</span> 
 
-<span class="ansi-green-fg">~/.virtualenvs/py37/lib/python3.7/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">_getbool_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1780</span>         <span class="ansi-red-fg"># caller is responsible for ensuring non-None axis</span>
-<span class="ansi-green-intense-fg ansi-bold">   1781</span>         labels <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>obj<span class="ansi-blue-fg">.</span>_get_axis<span class="ansi-blue-fg">(</span>axis<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 1782</span><span class="ansi-red-fg">         </span>key <span class="ansi-blue-fg">=</span> check_bool_indexer<span class="ansi-blue-fg">(</span>labels<span class="ansi-blue-fg">,</span> key<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1783</span>         inds <span class="ansi-blue-fg">=</span> key<span class="ansi-blue-fg">.</span>nonzero<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">   1784</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>obj<span class="ansi-blue-fg">.</span>_take_with_is_copy<span class="ansi-blue-fg">(</span>inds<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">~/.virtualenvs/py38/lib/python3.8/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">_getbool_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
+<span class="ansi-green-intense-fg ansi-bold">    894</span>         <span class="ansi-red-fg"># caller is responsible for ensuring non-None axis</span>
+<span class="ansi-green-intense-fg ansi-bold">    895</span>         labels <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>obj<span class="ansi-blue-fg">.</span>_get_axis<span class="ansi-blue-fg">(</span>axis<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 896</span><span class="ansi-red-fg">         </span>key <span class="ansi-blue-fg">=</span> check_bool_indexer<span class="ansi-blue-fg">(</span>labels<span class="ansi-blue-fg">,</span> key<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    897</span>         inds <span class="ansi-blue-fg">=</span> key<span class="ansi-blue-fg">.</span>nonzero<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    898</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>obj<span class="ansi-blue-fg">.</span>_take_with_is_copy<span class="ansi-blue-fg">(</span>inds<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span>axis<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">~/.virtualenvs/py37/lib/python3.7/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">check_bool_indexer</span><span class="ansi-blue-fg">(index, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2316</span>         <span class="ansi-green-fg">if</span> mask<span class="ansi-blue-fg">.</span>any<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2317</span>             raise IndexingError(
-<span class="ansi-green-fg">-&gt; 2318</span><span class="ansi-red-fg">                 </span><span class="ansi-blue-fg">&#34;Unalignable boolean Series provided as &#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   2319</span>                 <span class="ansi-blue-fg">&#34;indexer (index of the boolean Series and of &#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   2320</span>                 <span class="ansi-blue-fg">&#34;the indexed object do not match).&#34;</span>
+<span class="ansi-green-fg">~/.virtualenvs/py38/lib/python3.8/site-packages/pandas/core/indexing.py</span> in <span class="ansi-cyan-fg">check_bool_indexer</span><span class="ansi-blue-fg">(index, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2182</span>         mask <span class="ansi-blue-fg">=</span> isna<span class="ansi-blue-fg">(</span>result<span class="ansi-blue-fg">.</span>_values<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2183</span>         <span class="ansi-green-fg">if</span> mask<span class="ansi-blue-fg">.</span>any<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 2184</span><span class="ansi-red-fg">             raise IndexingError(
+</span><span class="ansi-green-intense-fg ansi-bold">   2185</span>                 <span class="ansi-blue-fg">&#34;Unalignable boolean Series provided as &#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">   2186</span>                 <span class="ansi-blue-fg">&#34;indexer (index of the boolean Series and of &#34;</span>
 
 <span class="ansi-red-fg">IndexingError</span>: Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).</pre>
 </div>
@@ -16055,7 +16055,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">other_outliers</span><span class="o">.</span><span class="n">values</span><span class="p">]</span> <span class="c1"># ... unless you refer to the underlying numpy array</span>
@@ -16074,7 +16074,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
 
 
@@ -16219,7 +16219,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">housing</span><span class="o">.</span><span class="n">AveOccup</span> <span class="o">&gt;</span> <span class="n">outlier_threshold</span><span class="p">]</span>
@@ -16238,7 +16238,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
 
 
@@ -16383,7 +16383,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">~</span><span class="p">(</span><span class="n">housing</span><span class="o">.</span><span class="n">AveOccup</span> <span class="o">&gt;</span> <span class="n">outlier_threshold</span><span class="p">)]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -16402,7 +16402,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
@@ -16517,7 +16517,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span>
@@ -16539,7 +16539,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
 
 
 
@@ -16659,7 +16659,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;AveOccup&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -16678,7 +16678,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
@@ -16853,7 +16853,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;AveBedrms&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -16872,7 +16872,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 
 
 
@@ -17054,7 +17054,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">outlier</span><span class="p">(</span><span class="n">series</span><span class="p">):</span>
@@ -17070,7 +17070,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">outliers</span> <span class="o">=</span> <span class="p">(</span>
@@ -17094,7 +17094,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
@@ -17112,7 +17112,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing_outliers</span> <span class="o">=</span> <span class="n">housing</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">outliers</span><span class="p">]</span>
@@ -17132,7 +17132,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
@@ -17241,7 +17241,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clean_housing</span> <span class="o">=</span> <span class="n">housing</span><span class="p">[</span><span class="o">~</span><span class="n">outliers</span><span class="p">]</span>
@@ -17261,7 +17261,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 
 
 
@@ -17370,7 +17370,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clean_housing</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -17389,7 +17389,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
@@ -17540,7 +17540,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">crime</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/sf_crime_truncated.csv&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Dates&#39;</span><span class="p">])</span>
@@ -17560,7 +17560,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 
 
 
@@ -17669,7 +17669,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">crime</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -17688,7 +17688,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 
 
 
@@ -17776,7 +17776,7 @@ Length: 20640, dtype: bool</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">crime</span><span class="o">.</span><span class="n">Category</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -17795,7 +17795,7 @@ Length: 20640, dtype: bool</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 
 
 
@@ -17823,7 +17823,7 @@ Name: Category, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">crime</span><span class="o">.</span><span class="n">DayOfWeek</span><span class="p">)</span>
@@ -17842,7 +17842,7 @@ Name: Category, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
 
 
 
@@ -17867,7 +17867,7 @@ Name: DayOfWeek, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">crime</span><span class="p">[</span><span class="n">crime</span><span class="o">.</span><span class="n">Category</span> <span class="o">==</span> <span class="s1">&#39;ASSAULT&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">DayOfWeek</span><span class="p">)</span>
@@ -17886,7 +17886,7 @@ Name: DayOfWeek, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 
 
 
@@ -17911,7 +17911,7 @@ Name: DayOfWeek, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">crime</span><span class="p">[</span><span class="n">crime</span><span class="o">.</span><span class="n">Category</span> <span class="o">==</span> <span class="s1">&#39;WARRANTS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">DayOfWeek</span><span class="p">)</span>
@@ -17930,7 +17930,7 @@ Name: DayOfWeek, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 
 
 
@@ -17939,8 +17939,8 @@ Name: DayOfWeek, dtype: int64</pre>
 <pre>Wednesday    158
 Thursday     139
 Monday       133
-Friday       127
 Tuesday      127
+Friday       127
 Sunday       122
 Saturday     116
 Name: DayOfWeek, dtype: int64</pre>
@@ -17955,7 +17955,7 @@ Name: DayOfWeek, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">crime</span><span class="o">.</span><span class="n">PdDistrict</span><span class="p">)</span>
@@ -17974,7 +17974,7 @@ Name: DayOfWeek, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
 
 
 

@@ -14306,48 +14306,13 @@ a.anchor-link {
 </ul>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>which python
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>/Users/rick446/.virtualenvs/py38/bin/python
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python -m venv data/env-folder
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>/usr/local/bin/python -m venv data/env-folder
 </pre></div>
 
      </div>
@@ -14366,7 +14331,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tree -d data/env-folder
@@ -14389,14 +14354,133 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>data/env-folder
-├── bin
-├── include
-└── lib
-    └── python3.8
-        └── site-packages
+<pre><span class="ansi-blue-intense-fg ansi-bold">data/env-folder</span>
+├── <span class="ansi-blue-intense-fg ansi-bold">bin</span>
+├── <span class="ansi-blue-intense-fg ansi-bold">include</span>
+└── <span class="ansi-blue-intense-fg ansi-bold">lib</span>
+    └── <span class="ansi-blue-intense-fg ansi-bold">python3.8</span>
+        └── <span class="ansi-blue-intense-fg ansi-bold">site-packages</span>
+            ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            ├── <span class="ansi-blue-intense-fg ansi-bold">pip</span>
+            │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   ├── <span class="ansi-blue-intense-fg ansi-bold">_internal</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">cli</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">commands</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">distributions</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">index</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">models</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">network</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">operations</span>
+            │   │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">build</span>
+            │   │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">install</span>
+            │   │   │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">req</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">resolution</span>
+            │   │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">legacy</span>
+            │   │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">resolvelib</span>
+            │   │   │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">utils</span>
+            │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   └── <span class="ansi-blue-intense-fg ansi-bold">vcs</span>
+            │   │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   └── <span class="ansi-blue-intense-fg ansi-bold">_vendor</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">cachecontrol</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">caches</span>
+            │       │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">certifi</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">chardet</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">cli</span>
+            │       │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">colorama</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">distlib</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">_backport</span>
+            │       │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">html5lib</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">_trie</span>
+            │       │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">filters</span>
+            │       │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">treeadapters</span>
+            │       │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">treebuilders</span>
+            │       │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">treewalkers</span>
+            │       │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">idna</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">msgpack</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">packaging</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">pep517</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">pkg_resources</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">progress</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">requests</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">resolvelib</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">toml</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       ├── <span class="ansi-blue-intense-fg ansi-bold">urllib3</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">contrib</span>
+            │       │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   │   └── <span class="ansi-blue-intense-fg ansi-bold">_securetransport</span>
+            │       │   │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   ├── <span class="ansi-blue-intense-fg ansi-bold">packages</span>
+            │       │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">backports</span>
+            │       │   │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   │   └── <span class="ansi-blue-intense-fg ansi-bold">ssl_match_hostname</span>
+            │       │   │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       │   └── <span class="ansi-blue-intense-fg ansi-bold">util</span>
+            │       │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │       └── <span class="ansi-blue-intense-fg ansi-bold">webencodings</span>
+            │           └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            ├── <span class="ansi-blue-intense-fg ansi-bold">pip-20.1.1.dist-info</span>
+            ├── <span class="ansi-blue-intense-fg ansi-bold">pkg_resources</span>
+            │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   ├── <span class="ansi-blue-intense-fg ansi-bold">_vendor</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   └── <span class="ansi-blue-intense-fg ansi-bold">packaging</span>
+            │   │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   └── <span class="ansi-blue-intense-fg ansi-bold">extern</span>
+            │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            ├── <span class="ansi-blue-intense-fg ansi-bold">setuptools</span>
+            │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   ├── <span class="ansi-blue-intense-fg ansi-bold">_vendor</span>
+            │   │   ├── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   │   └── <span class="ansi-blue-intense-fg ansi-bold">packaging</span>
+            │   │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   ├── <span class="ansi-blue-intense-fg ansi-bold">command</span>
+            │   │   └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            │   └── <span class="ansi-blue-intense-fg ansi-bold">extern</span>
+            │       └── <span class="ansi-blue-intense-fg ansi-bold">__pycache__</span>
+            └── <span class="ansi-blue-intense-fg ansi-bold">setuptools-47.1.0.dist-info</span>
 
-5 directories
+124 directories
 </pre>
 </div>
 </div>
@@ -14408,7 +14492,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ls -l data/env-folder/bin
@@ -14431,13 +14515,18 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>total 48
--rw-r--r--  1 rick446  staff  8834 Aug 19 16:40 Activate.ps1
--rw-r--r--  1 rick446  staff  2247 Aug 19 16:40 activate
--rw-r--r--  1 rick446  staff  1299 Aug 19 16:40 activate.csh
--rw-r--r--  1 rick446  staff  2451 Aug 19 16:40 activate.fish
-lrwxr-xr-x  1 rick446  staff    43 Aug 19 16:40 <span class="ansi-magenta-fg">python</span> -&gt; /Users/rick446/.virtualenvs/py38/bin/python
-lrwxr-xr-x  1 rick446  staff     6 Aug 19 16:40 <span class="ansi-magenta-fg">python3</span> -&gt; python
+<pre>total 88
+-rw-r--r--  1 rick446  staff  8834 Sep 24 14:01 Activate.ps1
+-rw-r--r--  1 rick446  staff  2247 Sep 24 14:01 activate
+-rw-r--r--  1 rick446  staff  1299 Sep 24 14:01 activate.csh
+-rw-r--r--  1 rick446  staff  2451 Sep 24 14:01 activate.fish
+-rwxr-xr-x  1 rick446  staff   276 Sep 24 14:01 <span class="ansi-red-fg">easy_install</span>
+-rwxr-xr-x  1 rick446  staff   276 Sep 24 14:01 <span class="ansi-red-fg">easy_install-3.8</span>
+-rwxr-xr-x  1 rick446  staff   267 Sep 24 14:01 <span class="ansi-red-fg">pip</span>
+-rwxr-xr-x  1 rick446  staff   267 Sep 24 14:01 <span class="ansi-red-fg">pip3</span>
+-rwxr-xr-x  1 rick446  staff   267 Sep 24 14:01 <span class="ansi-red-fg">pip3.8</span>
+lrwxr-xr-x  1 rick446  staff    21 Sep 24 14:01 <span class="ansi-magenta-fg">python</span> -&gt; /usr/local/bin/python
+lrwxr-xr-x  1 rick446  staff     6 Sep 24 14:01 <span class="ansi-magenta-fg">python3</span> -&gt; python
 </pre>
 </div>
 </div>
@@ -14461,7 +14550,7 @@ lrwxr-xr-x  1 rick446  staff     6 Aug 19 16:40 <span class="ansi-magenta-fg">py
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>data/env-folder/bin/python --version
@@ -14496,7 +14585,7 @@ lrwxr-xr-x  1 rick446  staff     6 Aug 19 16:40 <span class="ansi-magenta-fg">py
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>data/env-folder/bin/python -c <span class="s1">&#39;import sys; print(sys.executable)&#39;</span>
@@ -14531,7 +14620,7 @@ lrwxr-xr-x  1 rick446  staff     6 Aug 19 16:40 <span class="ansi-magenta-fg">py
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>data/env-folder/bin/python -c <span class="s1">&#39;import sys; print(sys.path)&#39;</span>
@@ -14596,10 +14685,10 @@ c:<span class="se">\.</span>..&gt;
 </pre></div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
@@ -14619,16 +14708,43 @@ python -c <span class="s1">&#39;import sys; print(sys.executable)&#39;</span>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>ACTIVATE
+/Users/rick446/src/arborian-classes/src/data/env-folder/bin/python
+My prompt is now (env-folder)
+/Users/rick446/src/arborian-classes/data/env-folder/bin/python
+DEACTIVATE
+/Users/rick446/.virtualenvs/py38/bin/python
+/Users/rick446/.virtualenvs/py38/bin/python
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Installing-packages-in-virtual-environments">Installing packages in virtual environments<a class="anchor-link" href="#Installing-packages-in-virtual-environments">&#182;</a></h1><p>When the virtual environment is activated, or when you invoke the version of Python in the virtualenv, you can install third-party packages into the virtualenv without modifying your system Python:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
@@ -14645,6 +14761,42 @@ python -c <span class="s1">&#39;import numpy; print(numpy)&#39;</span>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>/Users/rick446/src/arborian-classes/src/data/env-folder/bin/python
+Looking in links: /Users/rick446/src/wheelhouse
+Collecting pip
+  Using cached pip-20.2.3-py2.py3-none-any.whl (1.5 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.1.1
+    Uninstalling pip-20.1.1:
+      Successfully uninstalled pip-20.1.1
+Successfully installed pip-20.2.3
+Looking in links: /Users/rick446/src/wheelhouse
+Collecting numpy
+  Using cached numpy-1.19.2-cp38-cp38-macosx_10_9_x86_64.whl (15.3 MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.19.2
+&lt;module &#39;numpy&#39; from &#39;/Users/rick446/src/arborian-classes/data/env-folder/lib/python3.8/site-packages/numpy/__init__.py&#39;&gt;
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14652,21 +14804,43 @@ python -c <span class="s1">&#39;import numpy; print(numpy)&#39;</span>
 <code>pip</code> has a command <code>freeze</code> which outputs the exact versions of all packages installed in a virtualenv:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
 <span class="nb">set</span> -e
 <span class="nb">source</span> data/env-folder/bin/activate
-python -m pip freeze
+data/env-folder/bin/pip freeze -l
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>-f /Users/rick446/src/wheelhouse
+numpy==1.19.2
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14678,7 +14852,7 @@ python -m pip freeze
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
@@ -14698,10 +14872,10 @@ pip freeze &gt; data/requirements.txt
 <p>Once we have the requirements.txt file, we can create a new virtualenv and install all the same versions of packages into it:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
@@ -14716,6 +14890,35 @@ python -m pip install -r data/requirements.txt
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Looking in links: /Users/rick446/src/wheelhouse, /Users/rick446/src/wheelhouse
+Collecting numpy==1.19.2
+  Using cached numpy-1.19.2-cp38-cp38-macosx_10_9_x86_64.whl (15.3 MB)
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.19.1
+    Uninstalling numpy-1.19.1:
+      Successfully uninstalled numpy-1.19.1
+Successfully installed numpy-1.19.2
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14724,10 +14927,10 @@ python -m pip install -r data/requirements.txt
 <p>If you're moving to a new machine (for instance, when deploying to production) it can also be useful to have the wheels cached locally so <code>pip</code> doesn't try to download the packages from the Python Package Index.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
@@ -14742,10 +14945,129 @@ pip freeze &gt; data/requirements.txt
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Looking in links: /Users/rick446/src/wheelhouse
+Collecting scipy
+  Using cached scipy-1.5.2-cp38-cp38-macosx_10_9_x86_64.whl (28.9 MB)
+Collecting scikit-learn
+  Using cached scikit_learn-0.23.2-cp38-cp38-macosx_10_9_x86_64.whl (7.2 MB)
+Processing /Users/rick446/src/wheelhouse/jupyter-1.0.0-py2.py3-none-any.whl
+Collecting simplejson
+  Using cached simplejson-3.17.2-cp38-cp38-macosx_10_14_x86_64.whl (74 kB)
+Collecting pymongo
+  Using cached pymongo-3.11.0-cp38-cp38-macosx_10_9_x86_64.whl (379 kB)
+Collecting boto3
+  Using cached boto3-1.15.5-py2.py3-none-any.whl (129 kB)
+Collecting wheel
+  Using cached wheel-0.35.1-py2.py3-none-any.whl (33 kB)
+Requirement already satisfied: numpy&gt;=1.14.5 in /Users/rick446/src/arborian-classes/data/env-folder/lib/python3.8/site-packages (from scipy) (1.19.2)
+Collecting joblib&gt;=0.11
+  Using cached joblib-0.16.0-py3-none-any.whl (300 kB)
+Collecting threadpoolctl&gt;=2.0.0
+  Using cached threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting qtconsole
+  Using cached qtconsole-4.7.7-py2.py3-none-any.whl (118 kB)
+Processing /Users/rick446/src/wheelhouse/ipywidgets-7.5.1-py2.py3-none-any.whl
+Collecting jupyter-console
+  Using cached jupyter_console-6.2.0-py3-none-any.whl (22 kB)
+Processing /Users/rick446/src/wheelhouse/ipykernel-5.3.4-py3-none-any.whl
+Collecting nbconvert
+  Using cached nbconvert-6.0.6-py3-none-any.whl (551 kB)
+Collecting notebook
+  Using cached notebook-6.1.4-py3-none-any.whl (9.5 MB)
+Collecting botocore&lt;1.19.0,&gt;=1.18.5
+  Using cached botocore-1.18.5-py2.py3-none-any.whl (6.6 MB)
+Processing /Users/rick446/src/wheelhouse/jmespath-0.10.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/s3transfer-0.3.3-py2.py3-none-any.whl
+Collecting traitlets
+  Using cached traitlets-5.0.4-py3-none-any.whl (98 kB)
+Collecting pyzmq&gt;=17.1
+  Using cached pyzmq-19.0.2-cp38-cp38-macosx_10_9_x86_64.whl (806 kB)
+Collecting jupyter-client&gt;=4.1
+  Using cached jupyter_client-6.1.7-py3-none-any.whl (108 kB)
+Processing /Users/rick446/src/wheelhouse/QtPy-1.9.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Collecting pygments
+  Using cached Pygments-2.7.1-py3-none-any.whl (944 kB)
+Processing /Users/rick446/src/wheelhouse/jupyter_core-4.6.3-py2.py3-none-any.whl
+Collecting ipython&gt;=4.0.0; python_version &gt;= &#34;3.3&#34;
+  Using cached ipython-7.18.1-py3-none-any.whl (786 kB)
+Processing /Users/rick446/src/wheelhouse/nbformat-5.0.7-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/widgetsnbextension-3.5.1-py2.py3-none-any.whl
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0
+  Using cached prompt_toolkit-3.0.7-py3-none-any.whl (355 kB)
+Processing /Users/rick446/src/wheelhouse/appnope-0.1.0-py2.py3-none-any.whl
+Processing /Users/rick446/Library/Caches/pip/wheels/88/79/e5/598ba17e85eccf2626eab62e4ee8452895636cd542650d450d/tornado-6.0.4-cp38-cp38-macosx_10_14_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/pandocfilters-1.4.2-py3-none-any.whl
+Collecting nbclient&lt;0.6.0,&gt;=0.5.0
+  Using cached nbclient-0.5.0-py3-none-any.whl (65 kB)
+Processing /Users/rick446/src/wheelhouse/defusedxml-0.6.0-py2.py3-none-any.whl
+Collecting jupyterlab-pygments
+  Using cached jupyterlab_pygments-0.1.1-py2.py3-none-any.whl (4.6 kB)
+Processing /Users/rick446/src/wheelhouse/mistune-0.8.4-py2.py3-none-any.whl
+Collecting bleach
+  Using cached bleach-3.2.1-py2.py3-none-any.whl (145 kB)
+Processing /Users/rick446/src/wheelhouse/Jinja2-2.11.2-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/entrypoints-0.3-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/testpath-0.4.4-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/Send2Trash-1.5.0-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/prometheus_client-0.8.0-py2.py3-none-any.whl
+Collecting terminado&gt;=0.8.3
+  Using cached terminado-0.9.1-py3-none-any.whl (13 kB)
+Processing /Users/rick446/src/wheelhouse/argon2_cffi-20.1.0-cp37-abi3-macosx_10_6_intel.whl
+Processing /Users/rick446/src/wheelhouse/python_dateutil-2.8.1-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/urllib3-1.25.10-py2.py3-none-any.whl
+Requirement already satisfied: setuptools&gt;=18.5 in /Users/rick446/src/arborian-classes/data/env-folder/lib/python3.8/site-packages (from ipython&gt;=4.0.0; python_version &gt;= &#34;3.3&#34;-&gt;ipywidgets-&gt;jupyter) (47.1.0)
+Processing /Users/rick446/src/wheelhouse/backcall-0.2.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/decorator-4.4.2-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/jedi-0.17.2-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/pickleshare-0.7.5-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/pexpect-4.8.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/jsonschema-3.2.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/wcwidth-0.2.5-py2.py3-none-any.whl
+Collecting async-generator
+  Using cached async_generator-1.10-py3-none-any.whl (18 kB)
+Collecting nest-asyncio
+  Using cached nest_asyncio-1.4.0-py3-none-any.whl (5.2 kB)
+Processing /Users/rick446/src/wheelhouse/webencodings-0.5.1-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/six-1.15.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/packaging-20.4-py2.py3-none-any.whl
+Collecting MarkupSafe&gt;=0.23
+  Using cached MarkupSafe-1.1.1-cp38-cp38-macosx_10_9_x86_64.whl (16 kB)
+Processing /Users/rick446/src/wheelhouse/ptyprocess-0.6.0-py2.py3-none-any.whl
+Collecting cffi&gt;=1.0.0
+  Using cached cffi-1.14.3-2-cp38-cp38-macosx_10_9_x86_64.whl (176 kB)
+Processing /Users/rick446/src/wheelhouse/parso-0.7.1-py2.py3-none-any.whl
+Processing /Users/rick446/Library/Caches/pip/wheels/3d/22/08/7042eb6309c650c7b53615d5df5cc61f1ea9680e7edd3a08d2/pyrsistent-0.17.3-cp38-cp38-macosx_10_14_x86_64.whl
+Collecting attrs&gt;=17.4.0
+  Using cached attrs-20.2.0-py2.py3-none-any.whl (48 kB)
+Processing /Users/rick446/src/wheelhouse/pyparsing-2.4.7-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/pycparser-2.20-py2.py3-none-any.whl
+Installing collected packages: scipy, joblib, threadpoolctl, scikit-learn, ipython-genutils, traitlets, pyzmq, six, python-dateutil, tornado, jupyter-core, jupyter-client, qtpy, appnope, backcall, decorator, wcwidth, prompt-toolkit, parso, jedi, pickleshare, ptyprocess, pexpect, pygments, ipython, ipykernel, qtconsole, pyrsistent, attrs, jsonschema, nbformat, MarkupSafe, jinja2, Send2Trash, prometheus-client, pandocfilters, async-generator, nest-asyncio, nbclient, defusedxml, jupyterlab-pygments, mistune, webencodings, pyparsing, packaging, bleach, entrypoints, testpath, nbconvert, terminado, pycparser, cffi, argon2-cffi, notebook, widgetsnbextension, ipywidgets, jupyter-console, jupyter, simplejson, pymongo, urllib3, jmespath, botocore, s3transfer, boto3, wheel
+Successfully installed MarkupSafe-1.1.1 Send2Trash-1.5.0 appnope-0.1.0 argon2-cffi-20.1.0 async-generator-1.10 attrs-20.2.0 backcall-0.2.0 bleach-3.2.1 boto3-1.15.5 botocore-1.18.5 cffi-1.14.3 decorator-4.4.2 defusedxml-0.6.0 entrypoints-0.3 ipykernel-5.3.4 ipython-7.18.1 ipython-genutils-0.2.0 ipywidgets-7.5.1 jedi-0.17.2 jinja2-2.11.2 jmespath-0.10.0 joblib-0.16.0 jsonschema-3.2.0 jupyter-1.0.0 jupyter-client-6.1.7 jupyter-console-6.2.0 jupyter-core-4.6.3 jupyterlab-pygments-0.1.1 mistune-0.8.4 nbclient-0.5.0 nbconvert-6.0.6 nbformat-5.0.7 nest-asyncio-1.4.0 notebook-6.1.4 packaging-20.4 pandocfilters-1.4.2 parso-0.7.1 pexpect-4.8.0 pickleshare-0.7.5 prometheus-client-0.8.0 prompt-toolkit-3.0.7 ptyprocess-0.6.0 pycparser-2.20 pygments-2.7.1 pymongo-3.11.0 pyparsing-2.4.7 pyrsistent-0.17.3 python-dateutil-2.8.1 pyzmq-19.0.2 qtconsole-4.7.7 qtpy-1.9.0 s3transfer-0.3.3 scikit-learn-0.23.2 scipy-1.5.2 simplejson-3.17.2 six-1.15.0 terminado-0.9.1 testpath-0.4.4 threadpoolctl-2.1.0 tornado-6.0.4 traitlets-5.0.4 urllib3-1.25.10 wcwidth-0.2.5 webencodings-0.5.1 wheel-0.35.1 widgetsnbextension-3.5.1
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cat</span> <span class="n">data</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
@@ -14756,10 +15078,97 @@ pip freeze &gt; data/requirements.txt
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>-f /Users/rick446/src/wheelhouse
+appnope==0.1.0
+argon2-cffi==20.1.0
+async-generator==1.10
+attrs==20.2.0
+backcall==0.2.0
+bleach==3.2.1
+boto3==1.15.5
+botocore==1.18.5
+cffi==1.14.3
+decorator==4.4.2
+defusedxml==0.6.0
+entrypoints==0.3
+ipykernel==5.3.4
+ipython==7.18.1
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+jedi==0.17.2
+Jinja2==2.11.2
+jmespath==0.10.0
+joblib==0.16.0
+jsonschema==3.2.0
+jupyter==1.0.0
+jupyter-client==6.1.7
+jupyter-console==6.2.0
+jupyter-core==4.6.3
+jupyterlab-pygments==0.1.1
+MarkupSafe==1.1.1
+mistune==0.8.4
+nbclient==0.5.0
+nbconvert==6.0.6
+nbformat==5.0.7
+nest-asyncio==1.4.0
+notebook==6.1.4
+numpy==1.19.2
+packaging==20.4
+pandocfilters==1.4.2
+parso==0.7.1
+pexpect==4.8.0
+pickleshare==0.7.5
+prometheus-client==0.8.0
+prompt-toolkit==3.0.7
+ptyprocess==0.6.0
+pycparser==2.20
+Pygments==2.7.1
+pymongo==3.11.0
+pyparsing==2.4.7
+pyrsistent==0.17.3
+python-dateutil==2.8.1
+pyzmq==19.0.2
+qtconsole==4.7.7
+QtPy==1.9.0
+s3transfer==0.3.3
+scikit-learn==0.23.2
+scipy==1.5.2
+Send2Trash==1.5.0
+simplejson==3.17.2
+six==1.15.0
+terminado==0.9.1
+testpath==0.4.4
+threadpoolctl==2.1.0
+tornado==6.0.4
+traitlets==5.0.4
+urllib3==1.25.10
+wcwidth==0.2.5
+webencodings==0.5.1
+widgetsnbextension==3.5.1
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
@@ -14773,10 +15182,261 @@ pip wheel -w data/wheelhouse -r data/requirements.txt
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Looking in links: /Users/rick446/src/wheelhouse, /Users/rick446/src/wheelhouse
+Processing /Users/rick446/src/wheelhouse/appnope-0.1.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/appnope-0.1.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/argon2_cffi-20.1.0-cp37-abi3-macosx_10_6_intel.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/argon2_cffi-20.1.0-cp37-abi3-macosx_10_6_intel.whl
+Collecting async-generator==1.10
+  Using cached async_generator-1.10-py3-none-any.whl (18 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/async_generator-1.10-py3-none-any.whl
+Collecting attrs==20.2.0
+  Using cached attrs-20.2.0-py2.py3-none-any.whl (48 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/attrs-20.2.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/backcall-0.2.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/backcall-0.2.0-py2.py3-none-any.whl
+Collecting bleach==3.2.1
+  Using cached bleach-3.2.1-py2.py3-none-any.whl (145 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/bleach-3.2.1-py2.py3-none-any.whl
+Collecting boto3==1.15.5
+  Using cached boto3-1.15.5-py2.py3-none-any.whl (129 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/boto3-1.15.5-py2.py3-none-any.whl
+Collecting botocore==1.18.5
+  Using cached botocore-1.18.5-py2.py3-none-any.whl (6.6 MB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/botocore-1.18.5-py2.py3-none-any.whl
+Collecting cffi==1.14.3
+  Using cached cffi-1.14.3-2-cp38-cp38-macosx_10_9_x86_64.whl (176 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/cffi-1.14.3-2-cp38-cp38-macosx_10_9_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/decorator-4.4.2-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/decorator-4.4.2-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/defusedxml-0.6.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/defusedxml-0.6.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/entrypoints-0.3-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/entrypoints-0.3-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/ipykernel-5.3.4-py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/ipykernel-5.3.4-py3-none-any.whl
+Collecting ipython==7.18.1
+  Using cached ipython-7.18.1-py3-none-any.whl (786 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/ipython-7.18.1-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/ipython_genutils-0.2.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/ipywidgets-7.5.1-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/ipywidgets-7.5.1-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/jedi-0.17.2-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jedi-0.17.2-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/Jinja2-2.11.2-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/Jinja2-2.11.2-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/jmespath-0.10.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jmespath-0.10.0-py2.py3-none-any.whl
+Collecting joblib==0.16.0
+  Using cached joblib-0.16.0-py3-none-any.whl (300 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/joblib-0.16.0-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/jsonschema-3.2.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jsonschema-3.2.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/jupyter-1.0.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jupyter-1.0.0-py2.py3-none-any.whl
+Collecting jupyter-client==6.1.7
+  Using cached jupyter_client-6.1.7-py3-none-any.whl (108 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jupyter_client-6.1.7-py3-none-any.whl
+Collecting jupyter-console==6.2.0
+  Using cached jupyter_console-6.2.0-py3-none-any.whl (22 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jupyter_console-6.2.0-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/jupyter_core-4.6.3-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jupyter_core-4.6.3-py2.py3-none-any.whl
+Collecting jupyterlab-pygments==0.1.1
+  Using cached jupyterlab_pygments-0.1.1-py2.py3-none-any.whl (4.6 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/jupyterlab_pygments-0.1.1-py2.py3-none-any.whl
+Collecting MarkupSafe==1.1.1
+  Using cached MarkupSafe-1.1.1-cp38-cp38-macosx_10_9_x86_64.whl (16 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/MarkupSafe-1.1.1-cp38-cp38-macosx_10_9_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/mistune-0.8.4-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/mistune-0.8.4-py2.py3-none-any.whl
+Collecting nbclient==0.5.0
+  Using cached nbclient-0.5.0-py3-none-any.whl (65 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/nbclient-0.5.0-py3-none-any.whl
+Collecting nbconvert==6.0.6
+  Using cached nbconvert-6.0.6-py3-none-any.whl (551 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/nbconvert-6.0.6-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/nbformat-5.0.7-py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/nbformat-5.0.7-py3-none-any.whl
+Collecting nest-asyncio==1.4.0
+  Using cached nest_asyncio-1.4.0-py3-none-any.whl (5.2 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/nest_asyncio-1.4.0-py3-none-any.whl
+Collecting notebook==6.1.4
+  Using cached notebook-6.1.4-py3-none-any.whl (9.5 MB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/notebook-6.1.4-py3-none-any.whl
+Collecting numpy==1.19.2
+  Using cached numpy-1.19.2-cp38-cp38-macosx_10_9_x86_64.whl (15.3 MB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/numpy-1.19.2-cp38-cp38-macosx_10_9_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/packaging-20.4-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/packaging-20.4-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/pandocfilters-1.4.2-py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pandocfilters-1.4.2-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/parso-0.7.1-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/parso-0.7.1-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/pexpect-4.8.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pexpect-4.8.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/pickleshare-0.7.5-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pickleshare-0.7.5-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/prometheus_client-0.8.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/prometheus_client-0.8.0-py2.py3-none-any.whl
+Collecting prompt-toolkit==3.0.7
+  Using cached prompt_toolkit-3.0.7-py3-none-any.whl (355 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/prompt_toolkit-3.0.7-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/ptyprocess-0.6.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/ptyprocess-0.6.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/pycparser-2.20-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pycparser-2.20-py2.py3-none-any.whl
+Collecting Pygments==2.7.1
+  Using cached Pygments-2.7.1-py3-none-any.whl (944 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/Pygments-2.7.1-py3-none-any.whl
+Collecting pymongo==3.11.0
+  Using cached pymongo-3.11.0-cp38-cp38-macosx_10_9_x86_64.whl (379 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pymongo-3.11.0-cp38-cp38-macosx_10_9_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/pyparsing-2.4.7-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pyparsing-2.4.7-py2.py3-none-any.whl
+Processing /Users/rick446/Library/Caches/pip/wheels/3d/22/08/7042eb6309c650c7b53615d5df5cc61f1ea9680e7edd3a08d2/pyrsistent-0.17.3-cp38-cp38-macosx_10_14_x86_64.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pyrsistent-0.17.3-cp38-cp38-macosx_10_14_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/python_dateutil-2.8.1-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/python_dateutil-2.8.1-py2.py3-none-any.whl
+Collecting pyzmq==19.0.2
+  Using cached pyzmq-19.0.2-cp38-cp38-macosx_10_9_x86_64.whl (806 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/pyzmq-19.0.2-cp38-cp38-macosx_10_9_x86_64.whl
+Collecting qtconsole==4.7.7
+  Using cached qtconsole-4.7.7-py2.py3-none-any.whl (118 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/qtconsole-4.7.7-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/QtPy-1.9.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/QtPy-1.9.0-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/s3transfer-0.3.3-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/s3transfer-0.3.3-py2.py3-none-any.whl
+Collecting scikit-learn==0.23.2
+  Using cached scikit_learn-0.23.2-cp38-cp38-macosx_10_9_x86_64.whl (7.2 MB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/scikit_learn-0.23.2-cp38-cp38-macosx_10_9_x86_64.whl
+Collecting scipy==1.5.2
+  Using cached scipy-1.5.2-cp38-cp38-macosx_10_9_x86_64.whl (28.9 MB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/scipy-1.5.2-cp38-cp38-macosx_10_9_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/Send2Trash-1.5.0-py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/Send2Trash-1.5.0-py3-none-any.whl
+Collecting simplejson==3.17.2
+  Using cached simplejson-3.17.2-cp38-cp38-macosx_10_14_x86_64.whl (74 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/simplejson-3.17.2-cp38-cp38-macosx_10_14_x86_64.whl
+Processing /Users/rick446/src/wheelhouse/six-1.15.0-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/six-1.15.0-py2.py3-none-any.whl
+Collecting terminado==0.9.1
+  Using cached terminado-0.9.1-py3-none-any.whl (13 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/terminado-0.9.1-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/testpath-0.4.4-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/testpath-0.4.4-py2.py3-none-any.whl
+Collecting threadpoolctl==2.1.0
+  Using cached threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/threadpoolctl-2.1.0-py3-none-any.whl
+Processing /Users/rick446/Library/Caches/pip/wheels/88/79/e5/598ba17e85eccf2626eab62e4ee8452895636cd542650d450d/tornado-6.0.4-cp38-cp38-macosx_10_14_x86_64.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/tornado-6.0.4-cp38-cp38-macosx_10_14_x86_64.whl
+Collecting traitlets==5.0.4
+  Using cached traitlets-5.0.4-py3-none-any.whl (98 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/traitlets-5.0.4-py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/urllib3-1.25.10-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/urllib3-1.25.10-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/wcwidth-0.2.5-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/wcwidth-0.2.5-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/webencodings-0.5.1-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/webencodings-0.5.1-py2.py3-none-any.whl
+Processing /Users/rick446/src/wheelhouse/widgetsnbextension-3.5.1-py2.py3-none-any.whl
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/widgetsnbextension-3.5.1-py2.py3-none-any.whl
+Collecting setuptools&gt;=18.5
+  Using cached setuptools-50.3.0-py3-none-any.whl (785 kB)
+  Saved /Users/rick446/src/arborian-classes/data/wheelhouse/setuptools-50.3.0-py3-none-any.whl
+Skipping appnope, due to already being wheel.
+Skipping argon2-cffi, due to already being wheel.
+Skipping async-generator, due to already being wheel.
+Skipping attrs, due to already being wheel.
+Skipping backcall, due to already being wheel.
+Skipping bleach, due to already being wheel.
+Skipping boto3, due to already being wheel.
+Skipping botocore, due to already being wheel.
+Skipping cffi, due to already being wheel.
+Skipping decorator, due to already being wheel.
+Skipping defusedxml, due to already being wheel.
+Skipping entrypoints, due to already being wheel.
+Skipping ipykernel, due to already being wheel.
+Skipping ipython, due to already being wheel.
+Skipping ipython-genutils, due to already being wheel.
+Skipping ipywidgets, due to already being wheel.
+Skipping jedi, due to already being wheel.
+Skipping Jinja2, due to already being wheel.
+Skipping jmespath, due to already being wheel.
+Skipping joblib, due to already being wheel.
+Skipping jsonschema, due to already being wheel.
+Skipping jupyter, due to already being wheel.
+Skipping jupyter-client, due to already being wheel.
+Skipping jupyter-console, due to already being wheel.
+Skipping jupyter-core, due to already being wheel.
+Skipping jupyterlab-pygments, due to already being wheel.
+Skipping MarkupSafe, due to already being wheel.
+Skipping mistune, due to already being wheel.
+Skipping nbclient, due to already being wheel.
+Skipping nbconvert, due to already being wheel.
+Skipping nbformat, due to already being wheel.
+Skipping nest-asyncio, due to already being wheel.
+Skipping notebook, due to already being wheel.
+Skipping numpy, due to already being wheel.
+Skipping packaging, due to already being wheel.
+Skipping pandocfilters, due to already being wheel.
+Skipping parso, due to already being wheel.
+Skipping pexpect, due to already being wheel.
+Skipping pickleshare, due to already being wheel.
+Skipping prometheus-client, due to already being wheel.
+Skipping prompt-toolkit, due to already being wheel.
+Skipping ptyprocess, due to already being wheel.
+Skipping pycparser, due to already being wheel.
+Skipping Pygments, due to already being wheel.
+Skipping pymongo, due to already being wheel.
+Skipping pyparsing, due to already being wheel.
+Skipping pyrsistent, due to already being wheel.
+Skipping python-dateutil, due to already being wheel.
+Skipping pyzmq, due to already being wheel.
+Skipping qtconsole, due to already being wheel.
+Skipping QtPy, due to already being wheel.
+Skipping s3transfer, due to already being wheel.
+Skipping scikit-learn, due to already being wheel.
+Skipping scipy, due to already being wheel.
+Skipping Send2Trash, due to already being wheel.
+Skipping simplejson, due to already being wheel.
+Skipping six, due to already being wheel.
+Skipping terminado, due to already being wheel.
+Skipping testpath, due to already being wheel.
+Skipping threadpoolctl, due to already being wheel.
+Skipping tornado, due to already being wheel.
+Skipping traitlets, due to already being wheel.
+Skipping urllib3, due to already being wheel.
+Skipping wcwidth, due to already being wheel.
+Skipping webencodings, due to already being wheel.
+Skipping widgetsnbextension, due to already being wheel.
+Skipping setuptools, due to already being wheel.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ls</span> <span class="n">data</span><span class="o">/</span><span class="n">wheelhouse</span>
@@ -14799,27 +15459,73 @@ pip wheel -w data/wheelhouse -r data/requirements.txt
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Jinja2-2.11.1-py2.py3-none-any.whl
+<pre>Jinja2-2.11.2-py2.py3-none-any.whl
 MarkupSafe-1.1.1-cp38-cp38-macosx_10_9_x86_64.whl
-attrs-19.3.0-py2.py3-none-any.whl
-backcall-0.1.0-py3-none-any.whl
-bleach-3.1.0-py2.py3-none-any.whl
-decorator-4.4.1-py2.py3-none-any.whl
+Pygments-2.7.1-py3-none-any.whl
+QtPy-1.9.0-py2.py3-none-any.whl
+Send2Trash-1.5.0-py3-none-any.whl
+appnope-0.1.0-py2.py3-none-any.whl
+argon2_cffi-20.1.0-cp37-abi3-macosx_10_6_intel.whl
+async_generator-1.10-py3-none-any.whl
+attrs-20.2.0-py2.py3-none-any.whl
+backcall-0.2.0-py2.py3-none-any.whl
+bleach-3.2.1-py2.py3-none-any.whl
+boto3-1.15.5-py2.py3-none-any.whl
+botocore-1.18.5-py2.py3-none-any.whl
+cffi-1.14.3-2-cp38-cp38-macosx_10_9_x86_64.whl
+decorator-4.4.2-py2.py3-none-any.whl
 defusedxml-0.6.0-py2.py3-none-any.whl
 entrypoints-0.3-py2.py3-none-any.whl
-ipykernel-5.1.4-py3-none-any.whl
-ipython-7.12.0-py3-none-any.whl
+ipykernel-5.3.4-py3-none-any.whl
+ipython-7.18.1-py3-none-any.whl
 ipython_genutils-0.2.0-py2.py3-none-any.whl
 ipywidgets-7.5.1-py2.py3-none-any.whl
-jedi-0.16.0-py2.py3-none-any.whl
+jedi-0.17.2-py2.py3-none-any.whl
+jmespath-0.10.0-py2.py3-none-any.whl
+joblib-0.16.0-py3-none-any.whl
 jsonschema-3.2.0-py2.py3-none-any.whl
 jupyter-1.0.0-py2.py3-none-any.whl
-jupyter_client-5.3.4-py2.py3-none-any.whl
-jupyter_console-6.1.0-py2.py3-none-any.whl
-jupyter_core-4.6.1-py2.py3-none-any.whl
+jupyter_client-6.1.7-py3-none-any.whl
+jupyter_console-6.2.0-py3-none-any.whl
+jupyter_core-4.6.3-py2.py3-none-any.whl
+jupyterlab_pygments-0.1.1-py2.py3-none-any.whl
 mistune-0.8.4-py2.py3-none-any.whl
-nbconvert-5.6.1-py2.py3-none-any.whl
-nbformat-5.0.4-py3-none-any.whl
+nbclient-0.5.0-py3-none-any.whl
+nbconvert-6.0.6-py3-none-any.whl
+nbformat-5.0.7-py3-none-any.whl
+nest_asyncio-1.4.0-py3-none-any.whl
+notebook-6.1.4-py3-none-any.whl
+numpy-1.19.2-cp38-cp38-macosx_10_9_x86_64.whl
+packaging-20.4-py2.py3-none-any.whl
+pandocfilters-1.4.2-py3-none-any.whl
+parso-0.7.1-py2.py3-none-any.whl
+pexpect-4.8.0-py2.py3-none-any.whl
+pickleshare-0.7.5-py2.py3-none-any.whl
+prometheus_client-0.8.0-py2.py3-none-any.whl
+prompt_toolkit-3.0.7-py3-none-any.whl
+ptyprocess-0.6.0-py2.py3-none-any.whl
+pycparser-2.20-py2.py3-none-any.whl
+pymongo-3.11.0-cp38-cp38-macosx_10_9_x86_64.whl
+pyparsing-2.4.7-py2.py3-none-any.whl
+pyrsistent-0.17.3-cp38-cp38-macosx_10_14_x86_64.whl
+python_dateutil-2.8.1-py2.py3-none-any.whl
+pyzmq-19.0.2-cp38-cp38-macosx_10_9_x86_64.whl
+qtconsole-4.7.7-py2.py3-none-any.whl
+s3transfer-0.3.3-py2.py3-none-any.whl
+scikit_learn-0.23.2-cp38-cp38-macosx_10_9_x86_64.whl
+scipy-1.5.2-cp38-cp38-macosx_10_9_x86_64.whl
+setuptools-50.3.0-py3-none-any.whl
+simplejson-3.17.2-cp38-cp38-macosx_10_14_x86_64.whl
+six-1.15.0-py2.py3-none-any.whl
+terminado-0.9.1-py3-none-any.whl
+testpath-0.4.4-py2.py3-none-any.whl
+threadpoolctl-2.1.0-py3-none-any.whl
+tornado-6.0.4-cp38-cp38-macosx_10_14_x86_64.whl
+traitlets-5.0.4-py3-none-any.whl
+urllib3-1.25.10-py2.py3-none-any.whl
+wcwidth-0.2.5-py2.py3-none-any.whl
+webencodings-0.5.1-py2.py3-none-any.whl
+widgetsnbextension-3.5.1-py2.py3-none-any.whl
 </pre>
 </div>
 </div>
@@ -14834,10 +15540,10 @@ nbformat-5.0.4-py3-none-any.whl
 <p>Now we can distribute the <code>data/wheelhouse</code> directory with our project and install everything from the wheelhouse and not fetch from PyPI:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
@@ -14851,6 +15557,176 @@ pip install --no-index -f data/wheelhouse -r data/requirements.txt
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Looking in links: /Users/rick446/src/wheelhouse, data/wheelhouse, /Users/rick446/src/wheelhouse
+Requirement already satisfied: appnope==0.1.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 2)) (0.1.0)
+Requirement already satisfied: argon2-cffi==20.1.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 3)) (20.1.0)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/async_generator-1.10-py3-none-any.whl
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/attrs-20.2.0-py2.py3-none-any.whl
+Requirement already satisfied: backcall==0.2.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 6)) (0.2.0)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/bleach-3.2.1-py2.py3-none-any.whl
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/boto3-1.15.5-py2.py3-none-any.whl
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/botocore-1.18.5-py2.py3-none-any.whl
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/cffi-1.14.3-2-cp38-cp38-macosx_10_9_x86_64.whl
+Requirement already satisfied: decorator==4.4.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 11)) (4.4.2)
+Requirement already satisfied: defusedxml==0.6.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 12)) (0.6.0)
+Requirement already satisfied: entrypoints==0.3 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 13)) (0.3)
+Requirement already satisfied: ipykernel==5.3.4 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 14)) (5.3.4)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/ipython-7.18.1-py3-none-any.whl
+Requirement already satisfied: ipython-genutils==0.2.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 16)) (0.2.0)
+Requirement already satisfied: ipywidgets==7.5.1 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 17)) (7.5.1)
+Requirement already satisfied: jedi==0.17.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 18)) (0.17.2)
+Requirement already satisfied: Jinja2==2.11.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 19)) (2.11.2)
+Requirement already satisfied: jmespath==0.10.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 20)) (0.10.0)
+Requirement already satisfied: joblib==0.16.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 21)) (0.16.0)
+Requirement already satisfied: jsonschema==3.2.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 22)) (3.2.0)
+Requirement already satisfied: jupyter==1.0.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 23)) (1.0.0)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/jupyter_client-6.1.7-py3-none-any.whl
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/jupyter_console-6.2.0-py3-none-any.whl
+Requirement already satisfied: jupyter-core==4.6.3 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 26)) (4.6.3)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/jupyterlab_pygments-0.1.1-py2.py3-none-any.whl
+Requirement already satisfied: MarkupSafe==1.1.1 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 28)) (1.1.1)
+Requirement already satisfied: mistune==0.8.4 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 29)) (0.8.4)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/nbclient-0.5.0-py3-none-any.whl
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/nbconvert-6.0.6-py3-none-any.whl
+Requirement already satisfied: nbformat==5.0.7 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 32)) (5.0.7)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/nest_asyncio-1.4.0-py3-none-any.whl
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/notebook-6.1.4-py3-none-any.whl
+Requirement already satisfied: numpy==1.19.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 35)) (1.19.2)
+Requirement already satisfied: packaging==20.4 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 36)) (20.4)
+Requirement already satisfied: pandocfilters==1.4.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 37)) (1.4.2)
+Requirement already satisfied: parso==0.7.1 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 38)) (0.7.1)
+Requirement already satisfied: pexpect==4.8.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 39)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 40)) (0.7.5)
+Requirement already satisfied: prometheus-client==0.8.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 41)) (0.8.0)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/prompt_toolkit-3.0.7-py3-none-any.whl
+Requirement already satisfied: ptyprocess==0.6.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 43)) (0.6.0)
+Requirement already satisfied: pycparser==2.20 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 44)) (2.20)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/Pygments-2.7.1-py3-none-any.whl
+Requirement already satisfied: pymongo==3.11.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 46)) (3.11.0)
+Requirement already satisfied: pyparsing==2.4.7 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 47)) (2.4.7)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/pyrsistent-0.17.3-cp38-cp38-macosx_10_14_x86_64.whl
+Requirement already satisfied: python-dateutil==2.8.1 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 49)) (2.8.1)
+Requirement already satisfied: pyzmq==19.0.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 50)) (19.0.2)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/qtconsole-4.7.7-py2.py3-none-any.whl
+Requirement already satisfied: QtPy==1.9.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 52)) (1.9.0)
+Requirement already satisfied: s3transfer==0.3.3 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 53)) (0.3.3)
+Requirement already satisfied: scikit-learn==0.23.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 54)) (0.23.2)
+Requirement already satisfied: scipy==1.5.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 55)) (1.5.2)
+Requirement already satisfied: Send2Trash==1.5.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 56)) (1.5.0)
+Requirement already satisfied: simplejson==3.17.2 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 57)) (3.17.2)
+Requirement already satisfied: six==1.15.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 58)) (1.15.0)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/terminado-0.9.1-py3-none-any.whl
+Requirement already satisfied: testpath==0.4.4 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 60)) (0.4.4)
+Requirement already satisfied: threadpoolctl==2.1.0 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 61)) (2.1.0)
+Requirement already satisfied: tornado==6.0.4 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 62)) (6.0.4)
+Processing /Users/rick446/src/arborian-classes/data/wheelhouse/traitlets-5.0.4-py3-none-any.whl
+Requirement already satisfied: urllib3==1.25.10 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 64)) (1.25.10)
+Requirement already satisfied: wcwidth==0.2.5 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 65)) (0.2.5)
+Requirement already satisfied: webencodings==0.5.1 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 66)) (0.5.1)
+Requirement already satisfied: widgetsnbextension==3.5.1 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from -r data/requirements.txt (line 67)) (3.5.1)
+Requirement already satisfied: setuptools&gt;=18.5 in /Users/rick446/.virtualenvs/py38/lib/python3.8/site-packages (from ipython==7.18.1-&gt;-r data/requirements.txt (line 15)) (49.2.1)
+Installing collected packages: async-generator, attrs, bleach, botocore, boto3, cffi, prompt-toolkit, traitlets, Pygments, ipython, jupyter-client, jupyter-console, jupyterlab-pygments, nest-asyncio, nbclient, nbconvert, terminado, notebook, pyrsistent, qtconsole
+  Attempting uninstall: attrs
+    Found existing installation: attrs 19.3.0
+    Uninstalling attrs-19.3.0:
+      Successfully uninstalled attrs-19.3.0
+  Attempting uninstall: bleach
+    Found existing installation: bleach 3.1.5
+    Uninstalling bleach-3.1.5:
+      Successfully uninstalled bleach-3.1.5
+  Attempting uninstall: botocore
+    Found existing installation: botocore 1.17.63
+    Uninstalling botocore-1.17.63:
+      Successfully uninstalled botocore-1.17.63
+  Attempting uninstall: boto3
+    Found existing installation: boto3 1.14.48
+    Uninstalling boto3-1.14.48:
+      Successfully uninstalled boto3-1.14.48
+  Attempting uninstall: cffi
+    Found existing installation: cffi 1.14.1
+    Uninstalling cffi-1.14.1:
+      Successfully uninstalled cffi-1.14.1
+  Attempting uninstall: prompt-toolkit
+    Found existing installation: prompt-toolkit 3.0.5
+    Uninstalling prompt-toolkit-3.0.5:
+      Successfully uninstalled prompt-toolkit-3.0.5
+  Attempting uninstall: traitlets
+    Found existing installation: traitlets 4.3.3
+    Uninstalling traitlets-4.3.3:
+      Successfully uninstalled traitlets-4.3.3
+  Attempting uninstall: Pygments
+    Found existing installation: Pygments 2.6.1
+    Uninstalling Pygments-2.6.1:
+      Successfully uninstalled Pygments-2.6.1
+  Attempting uninstall: ipython
+    Found existing installation: ipython 7.17.0
+    Uninstalling ipython-7.17.0:
+      Successfully uninstalled ipython-7.17.0
+  Attempting uninstall: jupyter-client
+    Found existing installation: jupyter-client 6.1.6
+    Uninstalling jupyter-client-6.1.6:
+      Successfully uninstalled jupyter-client-6.1.6
+  Attempting uninstall: jupyter-console
+    Found existing installation: jupyter-console 6.1.0
+    Uninstalling jupyter-console-6.1.0:
+      Successfully uninstalled jupyter-console-6.1.0
+  Attempting uninstall: nbconvert
+    Found existing installation: nbconvert 5.6.1
+    Uninstalling nbconvert-5.6.1:
+      Successfully uninstalled nbconvert-5.6.1
+  Attempting uninstall: terminado
+    Found existing installation: terminado 0.8.3
+    Uninstalling terminado-0.8.3:
+      Successfully uninstalled terminado-0.8.3
+  Attempting uninstall: notebook
+    Found existing installation: notebook 6.1.1
+    Uninstalling notebook-6.1.1:
+      Successfully uninstalled notebook-6.1.1
+  Attempting uninstall: pyrsistent
+    Found existing installation: pyrsistent 0.16.0
+    Uninstalling pyrsistent-0.16.0:
+      Successfully uninstalled pyrsistent-0.16.0
+  Attempting uninstall: qtconsole
+    Found existing installation: qtconsole 4.7.5
+    Uninstalling qtconsole-4.7.5:
+      Successfully uninstalled qtconsole-4.7.5
+Successfully installed Pygments-2.7.1 async-generator-1.10 attrs-20.2.0 bleach-3.2.1 boto3-1.15.5 botocore-1.18.5 cffi-1.14.3 ipython-7.18.1 jupyter-client-6.1.7 jupyter-console-6.2.0 jupyterlab-pygments-0.1.1 nbclient-0.5.0 nbconvert-6.0.6 nest-asyncio-1.4.0 notebook-6.1.4 prompt-toolkit-3.0.7 pyrsistent-0.17.3 qtconsole-4.7.7 terminado-0.9.1 traitlets-5.0.4
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>ERROR: After October 2020 you may experience errors when installing or updating packages. This is because pip will change the way that it resolves dependency conflicts.
+
+We recommend you use --use-feature=2020-resolver to test your packages with the new resolver before it becomes the default.
+
+aiobotocore 1.1.1 requires botocore&lt;1.17.45,&gt;=1.17.44, but you&#39;ll have botocore 1.18.5 which is incompatible.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14860,7 +15736,7 @@ pip install --no-index -f data/wheelhouse -r data/requirements.txt
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>rm -r data/env-folder data/env-folder-2 data/wheelhouse data/requirements.txt
@@ -14874,10 +15750,10 @@ pip install --no-index -f data/wheelhouse -r data/requirements.txt
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python -m venv --help
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>/usr/local/bin/python -m venv --help
 </pre></div>
 
      </div>

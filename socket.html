@@ -14287,7 +14287,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
@@ -14300,7 +14300,20 @@ a.anchor-link {
 <span class="s1">Accept: */*</span>
 
 <span class="s1">&#39;&#39;&#39;</span>
-<span class="n">sock</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="n">http_req</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sock</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="n">http_req</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">sock</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
 <span class="n">sock</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">response</span><span class="p">))</span>
@@ -14323,7 +14336,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>495
+<pre>560
 </pre>
 </div>
 </div>
@@ -14335,7 +14348,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">))</span>
@@ -14365,12 +14378,13 @@ Content-Length: 0
 Cache-Control: public, max-age=600
 Location: https://www.cnn.com/
 Accept-Ranges: bytes
-Date: Tue, 28 Jul 2020 20:51:19 GMT
+Date: Thu, 24 Sep 2020 22:29:23 GMT
 Via: 1.1 varnish
 Connection: close
 Set-Cookie: countryCode=US; Domain=.cnn.com; Path=/; SameSite=Lax
-Set-Cookie: geoData=marietta|GA|30066|US|NA|-400|broadband|34.020|-84.500; Domain=.cnn.com; Path=/; SameSite=Lax
-X-Served-By: cache-fty21364-FTY
+Set-Cookie: stateCode=GA; Domain=.cnn.com; Path=/; SameSite=Lax
+Set-Cookie: geoData=marietta|GA|30068|US|NA|-400|broadband|33.970|-84.430; Domain=.cnn.com; Path=/; SameSite=Lax
+X-Served-By: cache-pdk17868-PDK
 X-Cache: HIT
 X-Cache-Hits: 0
 
@@ -14401,7 +14415,7 @@ X-Cache-Hits: 0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>sock.listen<span class="o">?</span>
@@ -14415,7 +14429,7 @@ X-Cache-Hits: 0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">contextlib</span> <span class="kn">import</span> <span class="n">closing</span>
@@ -14443,7 +14457,7 @@ X-Cache-Hits: 0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo_server</span><span class="p">(</span><span class="mi">8042</span><span class="p">)</span>
@@ -14467,8 +14481,8 @@ X-Cache-Hits: 0
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Waiting for connections on localhost:8042
-got connection from (&#39;127.0.0.1&#39;, 50564)
-Received &#34;b&#39;Hello there Intuit\n&#39;&#34;
+got connection from (&#39;127.0.0.1&#39;, 49830)
+Received &#34;b&#39;hello\n&#39;&#34;
 </pre>
 </div>
 </div>
@@ -14544,8 +14558,12 @@ Received &#34;b&#39;Hello there Intuit\n&#39;&#34;
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Waiting for connections on localhost:8042
-got connection from (&#39;127.0.0.1&#39;, 50574)
-Received b&#39;Networking is soooo fun!\n&#39;
+got connection from (&#39;127.0.0.1&#39;, 49843)
+Received b&#39;Hello\n&#39;
+Received b&#39;there\n&#39;
+Received b&#39;this\n&#39;
+Received b&#39;is working\n&#39;
+Received b&#39;still here\n&#39;
 Received b&#39;&#39;
 Socket closed, exiting thread
 </pre>
@@ -14625,11 +14643,11 @@ Socket closed, exiting thread
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Received b&#39;Here is data\n&#39;
-Received b&#39;it is echoed\n&#39;
+<pre>Received b&#39;Hello there\n&#39;
+Received b&#39;cool!\n&#39;
 Received b&#39;&#39;
 Socket disconnected, exiting handler
-Received b&#39;Is this echoed?\n&#39;
+Received b&#39;Multiple connections\n&#39;
 Received b&#39;&#39;
 Socket disconnected, exiting handler
 </pre>
@@ -14649,14 +14667,14 @@ Socket disconnected, exiting handler
 <span class="ansi-green-fg">&lt;ipython-input-14-56bad0c11514&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>server<span class="ansi-blue-fg">.</span>serve_forever<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socketserver.py</span> in <span class="ansi-cyan-fg">serve_forever</span><span class="ansi-blue-fg">(self, poll_interval)</span>
+<span class="ansi-green-fg">/usr/local/Cellar/python@3.8/3.8.5/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socketserver.py</span> in <span class="ansi-cyan-fg">serve_forever</span><span class="ansi-blue-fg">(self, poll_interval)</span>
 <span class="ansi-green-intense-fg ansi-bold">    230</span> 
 <span class="ansi-green-intense-fg ansi-bold">    231</span>                 <span class="ansi-green-fg">while</span> <span class="ansi-green-fg">not</span> self<span class="ansi-blue-fg">.</span>__shutdown_request<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 232</span><span class="ansi-red-fg">                     </span>ready <span class="ansi-blue-fg">=</span> selector<span class="ansi-blue-fg">.</span>select<span class="ansi-blue-fg">(</span>poll_interval<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    233</span>                     <span class="ansi-red-fg"># bpo-35017: shutdown() called during select(), exit immediately.</span>
 <span class="ansi-green-intense-fg ansi-bold">    234</span>                     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>__shutdown_request<span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/selectors.py</span> in <span class="ansi-cyan-fg">select</span><span class="ansi-blue-fg">(self, timeout)</span>
+<span class="ansi-green-fg">/usr/local/Cellar/python@3.8/3.8.5/Frameworks/Python.framework/Versions/3.8/lib/python3.8/selectors.py</span> in <span class="ansi-cyan-fg">select</span><span class="ansi-blue-fg">(self, timeout)</span>
 <span class="ansi-green-intense-fg ansi-bold">    413</span>         ready <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">]</span>
 <span class="ansi-green-intense-fg ansi-bold">    414</span>         <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 415</span><span class="ansi-red-fg">             </span>fd_event_list <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_selector<span class="ansi-blue-fg">.</span>poll<span class="ansi-blue-fg">(</span>timeout<span class="ansi-blue-fg">)</span>
@@ -14711,8 +14729,8 @@ Socket disconnected, exiting handler
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Received b&#39;I am connected\n&#39;
-Received b&#39;So am I\n&#39;
+<pre>Received b&#39;Another one\n&#39;
+Received b&#39;Actually multiple!\n&#39;
 Received b&#39;&#39;
 Socket disconnected, exiting handler
 Received b&#39;&#39;
@@ -14734,14 +14752,14 @@ Socket disconnected, exiting handler
 <span class="ansi-green-fg">&lt;ipython-input-16-56bad0c11514&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>server<span class="ansi-blue-fg">.</span>serve_forever<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socketserver.py</span> in <span class="ansi-cyan-fg">serve_forever</span><span class="ansi-blue-fg">(self, poll_interval)</span>
+<span class="ansi-green-fg">/usr/local/Cellar/python@3.8/3.8.5/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socketserver.py</span> in <span class="ansi-cyan-fg">serve_forever</span><span class="ansi-blue-fg">(self, poll_interval)</span>
 <span class="ansi-green-intense-fg ansi-bold">    230</span> 
 <span class="ansi-green-intense-fg ansi-bold">    231</span>                 <span class="ansi-green-fg">while</span> <span class="ansi-green-fg">not</span> self<span class="ansi-blue-fg">.</span>__shutdown_request<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 232</span><span class="ansi-red-fg">                     </span>ready <span class="ansi-blue-fg">=</span> selector<span class="ansi-blue-fg">.</span>select<span class="ansi-blue-fg">(</span>poll_interval<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    233</span>                     <span class="ansi-red-fg"># bpo-35017: shutdown() called during select(), exit immediately.</span>
 <span class="ansi-green-intense-fg ansi-bold">    234</span>                     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>__shutdown_request<span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/selectors.py</span> in <span class="ansi-cyan-fg">select</span><span class="ansi-blue-fg">(self, timeout)</span>
+<span class="ansi-green-fg">/usr/local/Cellar/python@3.8/3.8.5/Frameworks/Python.framework/Versions/3.8/lib/python3.8/selectors.py</span> in <span class="ansi-cyan-fg">select</span><span class="ansi-blue-fg">(self, timeout)</span>
 <span class="ansi-green-intense-fg ansi-bold">    413</span>         ready <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">]</span>
 <span class="ansi-green-intense-fg ansi-bold">    414</span>         <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 415</span><span class="ansi-red-fg">             </span>fd_event_list <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_selector<span class="ansi-blue-fg">.</span>poll<span class="ansi-blue-fg">(</span>timeout<span class="ansi-blue-fg">)</span>
@@ -14835,11 +14853,12 @@ Socket disconnected, exiting handler
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">binascii</span>
-<span class="n">binascii</span><span class="o">.</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="n">b_msg</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="n">b_msg</span>
 </pre></div>
 
      </div>
@@ -14855,7 +14874,7 @@ Socket disconnected, exiting handler
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
 
 
@@ -14873,10 +14892,10 @@ Socket disconnected, exiting handler
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sock</span><span class="o">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;8.8.8.8&#39;</span><span class="p">,</span> <span class="mi">53</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sock</span><span class="o">.</span><span class="n">sendto</span><span class="p">(</span><span class="n">b_msg</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;8.8.8.8&#39;</span><span class="p">,</span> <span class="mi">53</span><span class="p">))</span>
 <span class="n">sock</span><span class="o">.</span><span class="n">recvfrom</span><span class="p">(</span><span class="mi">4096</span><span class="p">)</span>
 </pre></div>
 
@@ -14893,13 +14912,14 @@ Socket disconnected, exiting handler
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>(b&#39;AA\xc1\x01\x00\x00\x00\x00\x00\x00\x00\x00&#39;, (&#39;8.8.8.8&#39;, 53))</pre>
+<pre>(b&#39;\xaa\xaa\x81\x80\x00\x01\x00\x01\x00\x00\x00\x00\x07example\x03com\x00\x00\x01\x00\x01\xc0\x0c\x00\x01\x00\x01\x00\x00Q\xc1\x00\x04]\xb8\xd8&#34;&#39;,
+ (&#39;8.8.8.8&#39;, 53))</pre>
 </div>
 
 </div>
@@ -14921,7 +14941,7 @@ Socket disconnected, exiting handler
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">struct</span>
@@ -14935,7 +14955,7 @@ Socket disconnected, exiting handler
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;iii&#39;</span><span class="p">,</span> <span class="mh">0x7aaa5555</span><span class="p">,</span> <span class="mh">0x7aaa5555</span><span class="p">,</span> <span class="mh">0x7aaa5555</span><span class="p">)</span>
@@ -14954,7 +14974,7 @@ Socket disconnected, exiting handler
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
